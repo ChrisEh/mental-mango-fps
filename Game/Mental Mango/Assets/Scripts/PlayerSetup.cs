@@ -1,11 +1,7 @@
-﻿//-------------------------------------
-// Responsible for setting up the player.
-// This includes adding/removing him correctly on the network.
-//-------------------------------------
-
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Networking;
 
+[RequireComponent(typeof(Player))]
 public class PlayerSetup : NetworkBehaviour
 {
 
@@ -34,14 +30,17 @@ public class PlayerSetup : NetworkBehaviour
             {
                 sceneCamera.gameObject.SetActive(false);
             }
-        }
-        RegisterPlayer();
+        }        
     }
 
-    void RegisterPlayer()
+    public override void OnStartClient()
     {
-        string id = "Player " + GetComponent<NetworkIdentity>().netId;
-        transform.name = id;
+        base.OnStartClient();
+
+        string netId = GetComponent<NetworkIdentity>().netId.ToString();
+        Player player = GetComponent<Player>();
+
+        GameManger.RegisterPlayer(netId, player);
     }
 
     // When we are destroyed
@@ -52,6 +51,10 @@ public class PlayerSetup : NetworkBehaviour
         {
             sceneCamera.gameObject.SetActive(true);
         }
+
+        // Deregister player
+        GameManger.UnregisterPlayer(transform.name);
+
     }
 
     void AssignRemoteLayer()
