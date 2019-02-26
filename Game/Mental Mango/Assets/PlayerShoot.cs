@@ -52,8 +52,6 @@ public class PlayerShoot : NetworkBehaviour
 
         Player player = GameManger.GetPlayer(playerId);
 
-        player.Model.RemoveAmount(weapon.damage);
-
-        Debug.Log($"{playerId} has taken {-1 * player.Model.CurrentOwned} of total damage.");
+        player.TakeDamage(damage);
     }
 }

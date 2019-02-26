@@ -39,7 +39,7 @@ public class PlayerSetup : NetworkBehaviour
 
         string netId = GetComponent<NetworkIdentity>().netId.ToString();
         Player player = GetComponent<Player>();
-        player.Model = new Health();
+
         GameManger.RegisterPlayer(netId, player);
     }
 
