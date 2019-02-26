@@ -30,7 +30,9 @@ public class PlayerSetup : NetworkBehaviour
             {
                 sceneCamera.gameObject.SetActive(false);
             }
-        }        
+        }
+
+        GetComponent<Player>().Setup();
     }
 
     public override void OnStartClient()
@@ -40,7 +42,7 @@ public class PlayerSetup : NetworkBehaviour
         string netId = GetComponent<NetworkIdentity>().netId.ToString();
         Player player = GetComponent<Player>();
 
-        GameManger.RegisterPlayer(netId, player);
+        GameManager.RegisterPlayer(netId, player);
     }
 
     // When we are destroyed
@@ -53,7 +55,7 @@ public class PlayerSetup : NetworkBehaviour
         }
 
         // Deregister player
-        GameManger.UnregisterPlayer(transform.name);
+        GameManager.UnRegisterPlayer(transform.name);
 
     }
 

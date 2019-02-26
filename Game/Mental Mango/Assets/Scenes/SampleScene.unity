@@ -770,9 +770,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 919309334}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f19835b45e38944781b9cbcebc7817d, type: 3}
+  m_Script: {fileID: 11500000, guid: ea4263d72c24e1243ab5b65d87d1b609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  matchSettings:
+    respawnTime: 3
 --- !u!4 &919309336
 Transform:
   m_ObjectHideFlags: 0

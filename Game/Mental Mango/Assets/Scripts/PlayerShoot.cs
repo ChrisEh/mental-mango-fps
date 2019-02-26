@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Networking;
 
 public class PlayerShoot : NetworkBehaviour
@@ -19,13 +17,13 @@ public class PlayerShoot : NetworkBehaviour
         if (cam == null)
         {
             Debug.LogError("No cam reference");
-            this.enabled = false;
+            enabled = false;
         }
     }
 
     void Update()
     {
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }
@@ -50,8 +48,7 @@ public class PlayerShoot : NetworkBehaviour
     {
         Debug.Log(playerId + " has been shot.");
 
-        Player player = GameManger.GetPlayer(playerId);
-
-        player.TakeDamage(damage);
+        Player player = GameManager.GetPlayer(playerId);
+        player.RpcTakeDamage(damage);
     }
 }
