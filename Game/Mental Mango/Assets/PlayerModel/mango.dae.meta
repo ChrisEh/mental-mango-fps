@@ -5,175 +5,146 @@ ModelImporter:
   fileIDToRecycleName:
     100000: Cylinder
     100002: Cylinder.006
-    100004: Cylinder.008
-    100006: Cylinder.009
-    100008: Cylinder.010
-    100010: //RootNode
-    100012: Sphere.001
+    100004: Cylinder.009
+    100006: Cylinder.010
+    100008: //RootNode
+    100010: Sphere.001
     400000: Cylinder
     400002: Cylinder.006
-    400004: Cylinder.008
-    400006: Cylinder.009
-    400008: Cylinder.010
-    400010: //RootNode
-    400012: Sphere.001
+    400004: Cylinder.009
+    400006: Cylinder.010
+    400008: //RootNode
+    400010: Sphere.001
     2100000: Material.020
     2100002: Material.021
     2100004: Material.022
     2100006: Material.023
-    2100008: Material.016
-    2100010: Material.008
-    2100012: Material.009
-    2100014: orange.001
-    2100016: brown
-    2100018: Material.018
-    2100020: Material.017
+    2100008: Material.008
+    2100010: Material.009
+    2100012: orange.001
+    2100014: brown
+    2100016: Material.018
+    2100018: Material.017
+    2100020: Material.016
     2100022: Material.014
-    2100024: Material.011
-    2100026: Material.012
-    2100028: Material.013
-    2100030: Material.015
-    2100032: Material.010
-    2100034: Material.006
-    2100036: Material.005
-    2100038: Material.004
-    2100040: Material.002
-    2100042: Material.001
-    2100044: Material.003
+    2100024: Material.012
+    2100026: Material.006
+    2100028: Material.005
+    2100030: Material.004
+    2100032: Material.002
+    2100034: Material.001
+    2100036: Material.003
     2300000: Cylinder
     2300002: Cylinder.006
-    2300004: Cylinder.008
-    2300006: Cylinder.009
-    2300008: Cylinder.010
-    2300010: Sphere.001
+    2300004: Cylinder.009
+    2300006: Cylinder.010
+    2300008: Sphere.001
     3300000: Cylinder
     3300002: Cylinder.006
-    3300004: Cylinder.008
-    3300006: Cylinder.009
-    3300008: Cylinder.010
-    3300010: Sphere.001
+    3300004: Cylinder.009
+    3300006: Cylinder.010
+    3300008: Sphere.001
     4300000: Cylinder.010
-    4300002: Cylinder.008
-    4300004: Cylinder
-    4300006: Cylinder.009
-    4300008: Cylinder.006
-    4300010: Sphere.001
+    4300002: Cylinder
+    4300004: Cylinder.009
+    4300006: Cylinder.006
+    4300008: Sphere.001
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: 9331771d37cf1ab4db7c7a1d81485a17, type: 2}
+    second: {fileID: 2100000, guid: cfa160dff95afcc45aacd7fb0bbf0d29, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.002
-    second: {fileID: 2100000, guid: 537b68be48f51cc48800040511d94556, type: 2}
+    second: {fileID: 2100000, guid: 11254007bdf25de489fbb231baff586c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.003
-    second: {fileID: 2100000, guid: 66b939a39e7a8c24b9567920d5be40bc, type: 2}
+    second: {fileID: 2100000, guid: 2f2f894bdf0e135489b831d73eeedc14, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.004
-    second: {fileID: 2100000, guid: a7740fbfe125e5b4791d76b90ad785ff, type: 2}
+    second: {fileID: 2100000, guid: ef418cab258ab744c914cd28e823c56b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.005
-    second: {fileID: 2100000, guid: dfa27b5ccc355644cb0d6e62df8bdeff, type: 2}
+    second: {fileID: 2100000, guid: 66ea70ec640f6634186fe1d3fed9ee87, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.006
-    second: {fileID: 2100000, guid: 79281d8de9423e34aa65061f9d6191cc, type: 2}
+    second: {fileID: 2100000, guid: b4e26f7416f88cf4bb63c715da20d5a5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.008
-    second: {fileID: 2100000, guid: 7dcdac6bed3e5d343b1349c01e9ca274, type: 2}
+    second: {fileID: 2100000, guid: 8bd8efe8750b082438715e6da21a0416, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.009
-    second: {fileID: 2100000, guid: 8778da2eeec36a847a2a655805c4bce1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.010
-    second: {fileID: 2100000, guid: 9cd6f8efca224b748bf979aefea521ee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.011
-    second: {fileID: 2100000, guid: 4b7e89b2bd8b5464ebfbc1a1018c0a14, type: 2}
+    second: {fileID: 2100000, guid: f0f5ad627ee72b642a9e60fcc778c858, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.012
-    second: {fileID: 2100000, guid: c19322e2f73640d47ac37933a7a87907, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.013
-    second: {fileID: 2100000, guid: 6c24957e147943a4ab47caba840b8549, type: 2}
+    second: {fileID: 2100000, guid: 92879dfb6889e604689f03a405539343, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.014
-    second: {fileID: 2100000, guid: 084f2242d6ae0aa47a15cbe5874a14c0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material.015
-    second: {fileID: 2100000, guid: 568b32f470f790444954222d9a867324, type: 2}
+    second: {fileID: 2100000, guid: 72142dcbe108e3d4cbe66331ef4193eb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.016
-    second: {fileID: 2100000, guid: 34ac8e6c12440554fb175f49e4f82159, type: 2}
+    second: {fileID: 2100000, guid: 30ea8419f373e3242aaabdcfca536551, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.017
-    second: {fileID: 2100000, guid: e131da2a84c19d14db2aff7fcfc7a194, type: 2}
+    second: {fileID: 2100000, guid: e8af99f17b96b0242bee239c7715ef4a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.018
-    second: {fileID: 2100000, guid: 6c3adcb6a6b9088418a8284fc89653eb, type: 2}
+    second: {fileID: 2100000, guid: 82f7df8e12be0ee4ea1e01fbe495146d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.020
-    second: {fileID: 2100000, guid: 914b177b5ed6d614bb98b5399fbb2783, type: 2}
+    second: {fileID: 2100000, guid: b367888e36585674cac800a681a692ed, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.021
-    second: {fileID: 2100000, guid: c59dd67e731299c4b860c5b61eb770c3, type: 2}
+    second: {fileID: 2100000, guid: 27df5f2112eed0b49a0e09c4a498ce31, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.022
-    second: {fileID: 2100000, guid: 6a9b706280c4cc94389355bd3fb36de8, type: 2}
+    second: {fileID: 2100000, guid: e98ff33570bede2409f730e319e27b19, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.023
-    second: {fileID: 2100000, guid: 6fe7eaa1727a7944ab42ba2793306f86, type: 2}
+    second: {fileID: 2100000, guid: 8effda9088d66ff4ca921549a949862d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: brown
-    second: {fileID: 2100000, guid: 91c97c460cc05b84594ff72446719f42, type: 2}
+    second: {fileID: 2100000, guid: a3dad63a34a0fdd42a92d96d2c5316f1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: orange.001
-    second: {fileID: 2100000, guid: 65f4cb0dececb5a4ba4245f2d0b1c58f, type: 2}
+    second: {fileID: 2100000, guid: 057736c1dd71d794ba8509c21b9d1423, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
