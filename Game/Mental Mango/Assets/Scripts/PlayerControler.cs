@@ -14,8 +14,6 @@ public class PlayerControler : MonoBehaviour
 
     [Header("Spring settings:")]
     [SerializeField]
-    private JointDriveMode jointMode = JointDriveMode.Position;
-    [SerializeField]
     private float jointSpring = 20f;
     [SerializeField]
     private float jointMaxForce = 30f;
@@ -87,7 +85,6 @@ public class PlayerControler : MonoBehaviour
     {
         joint.yDrive = new JointDrive
         {
-            mode = jointMode,
             positionSpring = jointSpring,
             maximumForce = jointMaxForce
         };
