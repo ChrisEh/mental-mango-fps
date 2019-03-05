@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\PlayerSetup.cs" />
      <Compile Include="Assets\Scripts\PlayerShoot.cs" />
      <Compile Include="Assets\Scripts\PlayerWeapon.cs" />
+     <Compile Include="Assets\Scripts\WeapoinManager.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Fucker/Documents/mental-mango-fps/Game/Mental Mango/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

@@ -188,7 +188,7 @@ e3e02de84bba673f600bcd9a7a7ec012 Assembly-CSharp.dll:.Player
 97a580c59cad3623a01bbf5fb2d7fa93 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.SpecularLighting
 9a40de0f5a84ec02044ccfb05875df71 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.WaypointCircuit
 bc6aaf002a4761441b87b86f1467da2a Assembly-CSharp-firstpass.dll:UnityStandardAssets.Cameras.TargetFieldOfView
-a0d4dfdb511b000d92a428636e3eb7a4 Assembly-CSharp.dll:.PlayerShoot
+a59eaa7036f289480ebc73e41a1b908a Assembly-CSharp.dll:.PlayerShoot
 510fefd6a544e16a3ffefa557ddcba39 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 c239250f2f7641ce897064c7bd4173b0 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Water.Water
 aa82b3ce4c0c9b227036c0337315c5d3 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
@@ -237,3 +237,4 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 5e869f601eca6873b969dceef87d6303 Assembly-CSharp-firstpass.dll:UnityStandardAssets._2D.PlatformerCharacter2D
 47cd05cf11ce8beb2fd9a1522f58f5ec Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
+e7c3e0edcf30808e873c849db7fb2736 Assembly-CSharp.dll:.WeapoinManager
