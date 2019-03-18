@@ -391,8 +391,8 @@ MonoBehaviour:
     name: Blaster
     damage: 5
     range: 100
-    fireRate: 0
-    Graphics: {fileID: 893525413803588667, guid: 5bc66f5e805096a4a8720e5bc1ebb1e4,
+    fireRate: 10
+    Graphics: {fileID: 1150109864314194218, guid: 0cc6fcfffe9f2b747b7348439f471f96,
       type: 3}
 --- !u!1 &47
 GameObject:
@@ -405,6 +405,7 @@ GameObject:
   - component: {fileID: 64}
   - component: {fileID: 79}
   - component: {fileID: 100}
+  - component: {fileID: 6757268291680919277}
   m_Layer: 9
   m_Name: Camera
   m_TagString: Untagged
@@ -478,6 +479,27 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47}
   m_Enabled: 1
+--- !u!114 &6757268291680919277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0923359e9e352a4b9b11c7b7161ad67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Radius: 0.166
+  m_SampleCount: 1
+  m_OcclusionIntensity: 1.5
+  m_Blur: 2
+  m_Downsampling: 2
+  m_OcclusionAttenuation: 1
+  m_MinZ: 0.01
+  m_SSAOShader: {fileID: 4800000, guid: 43ca18288c424f645aaa1e9e07f04c50, type: 3}
+  m_RandomTexture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
 --- !u!1 &49
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +555,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617609180295019420}
   m_LocalRotation: {x: -0.7094335, y: -0.14180502, z: -0.1492529, w: 0.674032}
-  m_LocalPosition: {x: 0.347, y: -0.38, z: 0.18}
+  m_LocalPosition: {x: 0.431, y: -0.409, z: 0.324}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 64}
@@ -1114,12 +1136,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae35a7f97fd41f04e9b858d2016cdc93, type: 3}
---- !u!4 &7892706299198600930 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400004, guid: ae35a7f97fd41f04e9b858d2016cdc93,
-    type: 3}
-  m_PrefabInstance: {fileID: 7892706299198991462}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7892706299198600928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400006, guid: ae35a7f97fd41f04e9b858d2016cdc93,
@@ -1129,6 +1145,12 @@ Transform:
 --- !u!4 &7892706299198600942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: ae35a7f97fd41f04e9b858d2016cdc93,
+    type: 3}
+  m_PrefabInstance: {fileID: 7892706299198991462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7892706299198600930 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: ae35a7f97fd41f04e9b858d2016cdc93,
     type: 3}
   m_PrefabInstance: {fileID: 7892706299198991462}
   m_PrefabAsset: {fileID: 0}

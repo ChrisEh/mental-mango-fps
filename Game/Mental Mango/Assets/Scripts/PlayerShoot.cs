@@ -48,12 +48,33 @@ public class PlayerShoot : NetworkBehaviour
                 CancelInvoke("Shoot");
             }
         }
-
     }
+
+    //// Called on the server when a player shoots.
+    //[Command]
+    //void CmdOnShoot()
+    //{
+    //    DoShootEffect();
+    //}
+
+    //// Called on all clients when we need to do a shoot effect.
+    //[ClientRpc]
+    //void DoShootEffect()
+    //{
+
+    //}
 
     [Client]
     void Shoot()
     {
+        if (!isLocalPlayer)
+        {
+            return;
+        }
+
+        //// We are shooting, call the methodf on the server.
+        //CmdOnShoot();
+
         Debug.Log("Shoot");
         RaycastHit hit;
 
