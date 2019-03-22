@@ -1,6 +1,6 @@
 Win
 PlayerPath?
-C:/Users/Fucker/Documents/mental-mango-fps/Game/Mental Mango/Builds/Mental Mango.exe
+C:/Users/Chris/Documents/mental-mango-fps/Game/Mental Mango/Builds/Mental Mango.exe
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?

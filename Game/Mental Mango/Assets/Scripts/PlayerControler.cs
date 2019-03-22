@@ -2,10 +2,12 @@
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(ConfigurableJoint))]
 [RequireComponent(typeof(PlayerMotor))]
+
 public class PlayerControler : MonoBehaviour
 {
     [SerializeField]
     private float speed = 5f;
+
     [SerializeField]
     private float lookSensitivity = 3f;
 

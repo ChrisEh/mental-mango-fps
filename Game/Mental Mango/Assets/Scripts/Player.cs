@@ -65,6 +65,8 @@ public class Player : NetworkBehaviour
     {
         isDead = true;        
 
+        // Play death animation ==> still to do.
+
         // Disable components.
         for (int i = 0; i < disableOnDeath.Length; i++)
         {
