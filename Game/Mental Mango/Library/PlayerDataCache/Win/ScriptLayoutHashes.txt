@@ -1,6 +1,6 @@
 Win
 PlayerPath?
-C:/Users/Chris/Documents/mental-mango-fps/Game/Mental Mango/Builds/Mental Mango.exe
+C:/Users/Fucker/Documents/mental-mango-fps/Game/Mental Mango/Builds/Mental Mango.exe
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
@@ -24,6 +24,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 be8b29ecd05b56bbfb5cc0e39b16c11b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Characters.FirstPerson.FirstPersonController
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 0faadf7f444e033f28a19470d1ae257b Assembly-CSharp-firstpass.dll:UnityStandardAssets.Effects.ExplosionPhysicsForce
+fbd5fa7806257e09a1945ad1c89c8303 Assembly-CSharp.dll:.WeaponGraphics
 f00ca901b734f71f99db8f25241154c4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Car.Suspension
 78d229a32405f4104025ae9511906999 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Car.BrakeLight
 39a1af780851540205de944aa74817a6 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Car.SkidTrail

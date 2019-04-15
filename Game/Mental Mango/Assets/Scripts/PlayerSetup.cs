@@ -27,7 +27,6 @@ public class PlayerSetup : NetworkBehaviour
     {
         // Disable components that should only be
         // active on the player that we control
-        // Check if we are the local player.
         if (!isLocalPlayer)
         {
             DisableComponents();
@@ -35,7 +34,7 @@ public class PlayerSetup : NetworkBehaviour
         }
         else
         {
-            // local player: Disable the scene camera
+            // We are the local player: Disable the scene camera
             sceneCamera = Camera.main;
             if (sceneCamera != null)
             {

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Networking;
 
 public class WeapoinManager : NetworkBehaviour
@@ -12,9 +14,20 @@ public class WeapoinManager : NetworkBehaviour
     private PlayerWeapon primaryWeapon;
 
     private PlayerWeapon currentWeapon;
+    private WeaponGraphics currentGraphics;
     void Start()
     {
-        EquipWeapon(primaryWeapon);
+        EquipWeapon(primaryWeapon);        
+    }
+
+    public PlayerWeapon GetCurrentWeapon()
+    {
+        return currentWeapon;
+    }
+
+    public WeaponGraphics GetCurrentGraphics()
+    {
+        return currentGraphics;
     }
 
     void EquipWeapon(PlayerWeapon weapon)
@@ -24,12 +37,12 @@ public class WeapoinManager : NetworkBehaviour
         GameObject weaponIns = Instantiate(weapon.Graphics, weaponHolder.position, weaponHolder.rotation);
         weaponIns.transform.SetParent(weaponHolder);
 
-        if (isLocalPlayer)
-            weaponIns.layer = LayerMask.NameToLayer(weaponLayerName);
-    }
+        currentGraphics = weaponIns.GetComponent<WeaponGraphics>();
 
-    public PlayerWeapon GetCurrentWeapon()
-    {
-        return currentWeapon;
-    }
+        if (currentGraphics == null)
+            Debug.LogError("No weapon component on thew weapon object: " + weaponIns.name);
+
+        if (isLocalPlayer)
+            Util.SetLayerRecursively(weaponIns, LayerMask.NameToLayer(weaponLayerName));
+    } 
 }
