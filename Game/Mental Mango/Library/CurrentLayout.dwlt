@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 548}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 926
     height: 873
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 15}
@@ -164,10 +164,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 881, y: 498}
-  m_MaxSize: {x: 16006, y: 14048}
+  m_MinSize: {x: 883, y: 498}
+  m_MaxSize: {x: 16008, y: 14048}
   vertical: 0
-  controlID: 145
+  controlID: 58
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,10 +189,10 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1307
-  m_MinSize: {x: 881, y: 498}
-  m_MaxSize: {x: 16006, y: 14048}
+  m_MinSize: {x: 883, y: 498}
+  m_MaxSize: {x: 16008, y: 14048}
   vertical: 1
-  controlID: 146
+  controlID: 59
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,10 +216,10 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 873
-  m_MinSize: {x: 881, y: 224}
-  m_MaxSize: {x: 16006, y: 4024}
+  m_MinSize: {x: 883, y: 224}
+  m_MaxSize: {x: 16008, y: 4024}
   vertical: 0
-  controlID: 147
+  controlID: 60
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -239,8 +239,8 @@ MonoBehaviour:
     y: 0
     width: 381
     height: 873
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -265,8 +265,8 @@ MonoBehaviour:
     y: 0
     width: 853
     height: 873
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -323,9 +323,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 424
+    x: 381
     y: 73
-    width: 655
+    width: 849
     height: 853
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &14
@@ -463,7 +463,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 34770
+  m_LastSelectedObjectID: 25162
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -560,14 +560,14 @@ MonoBehaviour:
     height: 853
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 14f63133f8dead44fae68ab21a9f94f2
-  m_SceneLighting: 0
+  m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: -0.040654123, z: -0.016661048}
+    m_Target: {x: -0.11414682, y: 3.9993742, z: 10.511523}
     speed: 2
-    m_Value: {x: 0, y: -0.040654123, z: -0.016661048}
+    m_Value: {x: -0.11414682, y: 3.9993742, z: 10.511523}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -595,13 +595,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.16668677, y: 0.7929673, z: -0.24921122, w: -0.5303887}
+    m_Target: {x: -0.29408047, y: -0.006907507, z: 0.002123484, w: -0.9557534}
     speed: 2
-    m_Value: {x: -0.16668677, y: 0.7929673, z: -0.24921122, w: -0.5303887}
+    m_Value: {x: -0.29408047, y: -0.006907507, z: 0.002123484, w: -0.9557534}
   m_Size:
-    m_Target: 3.432307
+    m_Target: 676.2805
     speed: 2
-    m_Value: 3.432307
+    m_Value: 676.2805
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -642,9 +642,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 62e5d2ff
-      m_LastClickedID: -2955934
-      m_ExpandedIDs: 62e5d2ff64e5d2ffe61e0100
+      m_SelectedIDs: a2fbffff
+      m_LastClickedID: -1118
+      m_ExpandedIDs: be80ffffc0d6ffffb0d7ffffd4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -786,34 +786,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Arena/Models/Sci-Fi Automatic
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Arena/Models/Sci-Fi Automatic
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Fucker\Desktop\NEW\mental-mango-fps\Game\Mental Mango
+  m_LastProjectPath: C:\Users\Fucker\Documents\mental-mango-fps\Game\Mental Mango
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 402b0000
-    m_LastClickedID: 11072
-    m_ExpandedIDs: 00000000dc270000ce280000e6280000482a00005a2a0000402b0000462b00009c2b0000a82c0000e02c0000182e0000c42e0000e22e0000002f00000c3200009a3900009c3900009e390000a0390000a2390000a439000000ca9a3b
+    m_SelectedIDs: 040b0000
+    m_LastClickedID: 2820
+    m_ExpandedIDs: 00000000040b00006a0b0000f60b00000e0c0000700d0000820d00006a0e0000700e0000c60e0000880f0000d20f00000a10000064100000c410000044110000f01100000e1200002c120000c61400003a150000b4390000b6390000b8390000ba390000bc390000be39000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Prefabs
+      m_OriginalName: Prefabs
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 3828
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -827,7 +827,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc270000ce280000e6280000482a00005a2a0000402b0000462b00009c2b0000a82c0000e02c0000182e0000c42e0000e22e0000002f00000c3200009a3900009c3900009e390000a0390000a2390000a4390000
+    m_ExpandedIDs: 00000000040b0000f60b00000e0c0000700d0000820d00006a0e0000700e0000c60e0000d20f00000a10000044110000f01100000e1200002c1200003a150000b4390000b6390000b8390000ba390000bc390000be390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
