@@ -29,6 +29,15 @@ public class PlayerShoot : NetworkBehaviour
     void Update()
     {
         currentWeapon = weaponManager.GetCurrentWeapon();
+        
+        if (currentWeapon.bullets < currentWeapon.maxBullets)
+        {
+            if (Input.GetButtonDown("Reload"))
+            {
+                weaponManager.Reload();
+                return;
+            }
+        }
 
         if (currentWeapon.fireRate <= 0f)
         {
@@ -83,9 +92,17 @@ public class PlayerShoot : NetworkBehaviour
     [Client]
     void Shoot()
     {
-        if (!isLocalPlayer)
+        if (!isLocalPlayer || weaponManager.isReloading)
             return;
 
+        if (currentWeapon.bullets <= 0)
+        {
+            Debug.Log("Out of bullets.");
+            return;
+        }
+
+        currentWeapon.bullets--;
+        
         // We are shooting, call the methodf on the server.
         CmdOnShoot();
 

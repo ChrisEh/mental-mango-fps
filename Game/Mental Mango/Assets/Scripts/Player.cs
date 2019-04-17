@@ -17,7 +17,12 @@ public class Player : NetworkBehaviour
     private int maxHealth = 100;
 
     [SyncVar]
-    private int currentHealth;
+    private int currentHealth = 0;
+
+    public float GetHealthPct()
+    {
+        return (float)currentHealth / (float)maxHealth;
+    }
 
     [SerializeField]
     private Behaviour[] disableOnDeath;
@@ -34,11 +39,17 @@ public class Player : NetworkBehaviour
     [SerializeField]
     private GameObject spawnEffect;
 
-    public void PlayerSetup()
+    private bool firstSetup = true;
+
+    public void SetupPlayer()
     {
-        // Switch camera.
-        GameManager.instance.SetSceneCameraActive(false);
-        GetComponent<PlayerSetup>().playerUiInstance.SetActive(true);
+        if (isLocalPlayer)
+        {
+            // Switch camera.
+            GameManager.instance.SetSceneCameraActive(false);
+            GetComponent<PlayerSetup>().playerUiInstance.SetActive(true);
+            GetComponent<WeapoinManager>().Reload();
+        }
 
         CmdBroadcastNewPlayerSetup();
     }
@@ -52,23 +63,19 @@ public class Player : NetworkBehaviour
     [ClientRpc]
     private void RpcSetupPlayerOnAllClients()
     {
-        wasEnabled = new bool[disableOnDeath.Length];
-
-        for (int i = 0; i < wasEnabled.Length; i++)
+        if (firstSetup)
         {
-            wasEnabled[i] = disableOnDeath[i].enabled;
+            wasEnabled = new bool[disableOnDeath.Length];
+
+            for (int i = 0; i < wasEnabled.Length; i++)
+            {
+                wasEnabled[i] = disableOnDeath[i].enabled;
+            }
         }
 
+        firstSetup = false;
+
         SetDefaults();
-    }
-
-    void Update()
-    {
-        if (!isLocalPlayer)
-            return;
-
-        if (Input.GetKeyDown(KeyCode.K))
-            RpcTakeDamage(9999);
     }
 
     [ClientRpc]
@@ -102,7 +109,7 @@ public class Player : NetworkBehaviour
         {
             disableGameObjectsOnDeath[i].SetActive(false);
         }
-
+        
         // Disable collider.
         Collider collider = GetComponent<Collider>();
 
@@ -133,7 +140,10 @@ public class Player : NetworkBehaviour
         Transform spawnPoint = NetworkManager.singleton.GetStartPosition();
         transform.position = spawnPoint.position;
         transform.rotation = spawnPoint.rotation;
-        SetDefaults();
+
+        yield return new WaitForSeconds(0.01f);
+
+        SetupPlayer();
         Debug.Log($"Player '{transform.name}' respawned.");
     }
 
@@ -160,8 +170,8 @@ public class Player : NetworkBehaviour
         if (collider != null)
             collider.enabled = true;
 
-        // Create spawn effect.
-        GameObject gfxIns = (GameObject)Instantiate(spawnEffect, transform.position, Quaternion.identity);
-        Destroy(gfxIns, 3f);
+        //// Create spawn effect.
+        //GameObject gfxIns = (GameObject)Instantiate(spawnEffect, transform.position, Quaternion.identity);
+        //Destroy(gfxIns, 3f);
     }
 }
