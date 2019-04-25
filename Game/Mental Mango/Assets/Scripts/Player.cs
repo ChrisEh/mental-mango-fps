@@ -48,7 +48,6 @@ public class Player : NetworkBehaviour
             // Switch camera.
             GameManager.instance.SetSceneCameraActive(false);
             GetComponent<PlayerSetup>().playerUiInstance.SetActive(true);
-            GetComponent<WeapoinManager>().Reload();
         }
 
         CmdBroadcastNewPlayerSetup();
